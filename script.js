@@ -25,7 +25,8 @@ fetch("https://api.instagram.com/oauth/access_token", {
   headers: {
     "Content-Type": "multipart/form-data"
   },
-  method: "POST"
+  method: "POST",
+  mode: 'cors',
 }).then((returned)=>{
   console.log(returned)
 })
